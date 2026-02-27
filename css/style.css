@@ -1,0 +1,198 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    color: #1a0000;
+}
+#game{
+    margin: 0;
+    padding: 0;
+    display:flex;
+    height: 95vh;
+}
+#header{
+    display: flex;
+    height: 5vh;
+    padding-left: 20px;
+}
+
+#header p{
+    margin-right:20px;
+}
+#clickingArea{
+    border-width: 15px;
+    border-style: solid;
+    border-image: url("../images/leafbackground.png") 10% round;
+    background-color: #e3d35c;
+    width: 33%;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.anUpgrade{
+    border-width: 5px;
+    border-style: solid;
+    border-image: url("../images/bananabark.webp") 10% round;
+    display: flex;
+    cursor: pointer;
+}
+.anUpgrade:hover{
+    opacity: 50%;
+}
+#upgradeImg{
+    width: 15%;
+    margin: 5px;
+}
+
+#info{
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+#banana{
+    cursor:pointer;
+}
+
+#clickingArea img{
+    width: 50%;
+}
+
+#clickingArea p{
+    font-size: 220%;
+}
+
+#store{
+    border-width: 15px;
+    border-style: solid;
+    border-image: url("../images/leafbackground.png") 10% round;
+    text-align: center;
+    width: 33%;
+    overflow: auto;
+    background-color: #d4c658;
+}
+
+#upgrades{
+    border-width: 15px;
+    border-style: solid;
+    border-image: url("../images/leafbackground.png") 10% round;
+    text-align: center;
+    width: 33%;
+    overflow-y: auto;
+    background-color: #d4c658;
+}
+
+#clicker{
+    display: none;
+}
+
+#employee{
+    display: none;
+}
+
+#tree{
+    display: none;
+}
+
+#farm{
+    display: none;
+}
+
+#mine{
+    display: none;
+}
+
+#factory{
+    display: none;
+}
+
+#hundredb{
+    display: none;
+}
+
+#thousandb{
+    display: none;
+}
+
+#tenthousandb{
+    display: none;
+}
+
+#hundredthousandb{
+    display: none;
+}
+
+#employeeb{
+    display: none;
+}
+
+#treeb{
+    display: none;
+}
+
+#farmb{
+    display: none;
+}
+
+#mineb{
+    display: none;
+}
+
+#factoryb{
+    display: none;
+}
+
+#clickerUpgrade1{
+    display: none;
+}
+
+#clickerUpgrade2{
+    display: none;
+}
+
+#clickerUpgrade3{
+    display: none;
+}
+
+#employeeUpgrade{
+    display: none;
+}
+
+#treeUpgrade{
+    display: none;
+}
+
+#mineUpgrade{
+    display: none;
+}
+
+#factoryUpgrade{
+    display: none;
+}
+
+#info2{
+    display: flex;
+    font-size: 40%;
+    justify-content: center;
+}
+#clickPower{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+#upgradesInPlay{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+#help{
+    display: none;
+}
+
+#congratsMessage{
+    text-align: center;
+    display: none;
+}
+
+#header{
+    background-color: #d4c658;
+}

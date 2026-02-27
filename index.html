@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Banana Clicker</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/script.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <input type="button" value="Help" id="helpButton">
+        <img src="images/badge100banana.png" class="badges" id="hundredb">
+        <img src="images/badge1000banana.png" class="badges" id="thousandb">
+        <img src="images/badge10kbanana.png" class="badges" id="tenthousandb">
+        <img src="images/badge100kbanana.png" class="badges" id="hundredthousandb">
+        <img src="images/badgeEmployee.png" class="badges" id="employeeb">
+        <img src="images/badgeTree.png" class="badges" id="treeb">
+        <img src="images/badgeFarm.png" class="badges" id="farmb">
+        <img src="images/badgeMine.png" class="badges" id="mineb">
+        <img src="images/badgeFactory.png" class="badges" id="factoryb">
+    </div>
+    <div id="help">
+        <p class="helpText">To get started in the game, just click the banana until you're able to get an upgrade on the left side of the screen!</p>
+        <p class="helpText">There are 6 upgrades in the game, descriptions of which appear along with the upgrade!</p>
+        <p class="helpText">There are also 7 different upgrades to the upgrades available in the store section once you have enough bananas!</p>
+        <p class="helpText">(click the help button again to close this)</p>
+    </div>
+    <div id="congratsMessage">
+        <h2>Congrats! You got a badge! Check the top left!</h2>
+    </div>
+    <div id="game">
+        <div id="store">
+            <h1>Store</h1>
+            <div class="anUpgrade" id="clickerUpgrade1">
+                <img src="images/cursor2.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Carpal Tunnel Prevention</p>
+                    <p id="upgradeCost">Cost: 500 Bananas</p>
+                    <p id="discription">Clicking the Banana is now twice as effective</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="employeeUpgrade">
+                <img src="images/farmer-icon-design-illustration-vector2.jpg" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Pay Raise</p>
+                    <p id="upgradeCost">Cost: 1,000 Bananas</p>
+                    <p id="discription">Employees are now twice as effective</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="clickerUpgrade2">
+                <img src="images/cursor3.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Carpal Tunnel Prevention 2</p>
+                    <p id="upgradeCost">Cost: 5,000 Bananas</p>
+                    <p id="discription">Clicking the Banana is now three times as effective</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="treeUpgrade">
+                <img src="images/fertilizer.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Fertilizer</p>
+                    <p id="upgradeCost">Cost: 10,000 Bananas</p>
+                    <p id="discription">Banana Trees are now three times as effective</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="mineUpgrade">
+                <img src="images/Enchanted_Diamond_Pickaxe.gif" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Better Pickaxe</p>
+                    <p id="upgradeCost">Cost: 20,000 Bananas</p>
+                    <p id="discription">Mines are now three times as effective</p>
+                </div>
+            </div>
+            
+            <div class="anUpgrade" id="clickerUpgrade3">
+                <img src="images/cursor4.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Carpal Tunnel Prevention 3</p>
+                    <p id="upgradeCost">Cost: 50,000 Bananas</p>
+                    <p id="discription">Clicking the Banana is now five times as effective</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="factoryUpgrade">
+                <img src="images/factory2.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Hard Work</p>
+                    <p id="upgradeCost">Cost: 500,000 Bananas</p>
+                    <p id="discription">Factories are now one hundred times as effective</p>
+                </div>
+            </div>
+        </div>
+        <div id="clickingArea">
+            <div id="scoreboard">
+                <div id="info2">
+                    <p id="upgradesInPlay">0 upgrades so far</p>
+                    <p id="clickPower">0 bananas per click</p>
+                </div>
+                <p id="score">0 bananas</p>
+                <p id="bps">0 bananas per second</p>
+            </div>
+            <div id="thing">
+                <img src="images/banana.png" draggable="false" id="banana">
+            </div>
+        </div>
+        <div id="upgrades">
+            <h1>Upgrades</h1>
+            <div class="anUpgrade" id="clicker">
+                <img src="images/cursor.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Clicker</p>
+                    <p id="clickerCost">Cost: 5 Bananas</p>
+                    <p id="description">Autoclicks once every 5 seconds</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="employee">
+                <img src="images/farmer-icon-design-illustration-vector.jpg" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Employee</p>
+                    <p id="employeeCost">Cost: 15 Bananas</p>
+                    <p id="employeeDescription">Produces 1 Banana per Second</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="tree">
+                <img src="images/bananatree.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Banana Tree</p>
+                    <p id="treeCost">Cost: 100 Bananas</p>
+                    <p id="treeDescription">Produces 8 Bananas per Second</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="farm">
+                <img src="images/bananafarm.webp" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Banana Farm</p>
+                    <p id="farmCost">Cost: 1,100 Bananas</p>
+                    <p id="farmDescription">Produces 15 Bananas per Second</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="mine">
+                <img src="images/gold-mine-clip-art-1859730.webp" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Banana Mine</p>
+                    <p id="mineCost">Cost: 12,000 Bananas</p>
+                    <p id="mineDescription">Produces 50 Bananas per Second</p>
+                </div>
+            </div>
+            <div class="anUpgrade" id="factory">
+                <img src="images/factory.png" id="upgradeImg">
+                <div id="info">
+                    <p id="upgradeName">Banana Factory</p>
+                    <p id="factoryCost">Cost: 130,000 Bananas</p>
+                    <p id="factoryDescription">Produces 250 Bananas per Second</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
